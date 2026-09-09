@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rewrite AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg"></div>
+<main class="container">
+<nav>
+  <div class="logo"><span class="logo-dot"></span> REWRITE AI</div>
+  <div class="badge">BETA</div>
+</nav>
+
+<section class="hero">
+  <p class="eyebrow">INTELLIGENT WRITING ASSISTANT</p>
+  <h1>Rewrite text with<br><span>a natural flow.</span></h1>
+  <p class="subtitle">Improve clarity, tone and readability while keeping the original meaning.</p>
+
+  <div class="workspace">
+    <div class="panel">
+      <div class="panel-top"><span>ORIGINAL TEXT</span><span id="inCount">0 words</span></div>
+      <textarea id="input" placeholder="Paste your text here..."></textarea>
+    </div>
+
+    <div class="controls">
+      <label>STYLE</label>
+      <div class="styles">
+        <button class="style active" data-style="natural">Natural</button>
+        <button class="style" data-style="simple">Simple</button>
+        <button class="style" data-style="professional">Professional</button>
+        <button class="style" data-style="casual">Casual</button>
+      </div>
+      <button id="rewrite" class="rewrite-btn"><span>✦</span> Rewrite Text</button>
+      <button id="clear" class="clear">Clear</button>
+    </div>
+
+    <div class="panel output-panel">
+      <div class="panel-top"><span>REWRITTEN TEXT</span><span id="outCount">0 words</span></div>
+      <div id="output" class="output placeholder">Your rewritten text will appear here.</div>
+      <button id="copy" class="copy" disabled>Copy</button>
+    </div>
+  </div>
+
+  <p id="message" class="message"></p>
+</section>
+
+<section class="info">
+  <div><p class="section-label">ABOUT REWRITE AI</p><h2>Write clearer. Sound like yourself.</h2></div>
+  <p>Rewrite AI is designed to improve readability and style without changing the core meaning of your text. It is not a guarantee of, or a tool for, bypassing AI detection systems.</p>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
